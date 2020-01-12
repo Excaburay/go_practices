@@ -40,7 +40,6 @@ func main() {
 	}
 	fmt.Println("is ages and ages2 are same ", learntest.MapEqual(ages, ages2))
 
-
 	var movies = []Movie{
 		{Title: "Casablanca", Year: 1942, Color: false,
 			Actors: []string{"Humphrey Bogart", "Ingrid Bergman"}},
@@ -51,18 +50,18 @@ func main() {
 	}
 	data, err := json.Marshal(movies)
 	if err != nil {
-		log.Fatal("JSON marshaling failed: %s",err)
+		log.Fatal("JSON marshaling failed: %s", err)
 	}
 	fmt.Printf("%s\n", data)
 
-	data, err = json.MarshalIndent(movies,"","	 ")
+	data, err = json.MarshalIndent(movies, "", "	 ")
 	if err != nil {
-		log.Fatal("JSON marshaling failed: %s",err)
+		log.Fatal("JSON marshaling failed: %s", err)
 	}
 	fmt.Printf("%s\n", data)
 
-	var titles []struct{Title string}
-	if err := json.Unmarshal(data, &titles); err != nil{
+	var titles []struct{ Title string }
+	if err := json.Unmarshal(data, &titles); err != nil {
 		log.Fatalf("JSON unmarshaling failed: %s", err)
 	}
 	fmt.Println(titles)
