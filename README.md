@@ -10,7 +10,8 @@ use __go 1.3__ and **go mod**,so it has the go.mod file in project. To run this 
 -----
 
 ## slice map JSON
-There are some basic operations about slice and map in **learntest** folder.
+There are some basic operations about slice and map in **learntest** folder.    
+
 |  part | desc |
 |  ---  | ---  |
 |  map  |  Map store data by key-value which can search faster than linear search. Key should support == or != operation   |
