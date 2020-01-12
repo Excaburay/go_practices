@@ -1,0 +1,5 @@
+package stringutil
+
+func TransformStructToJson()  {
+
+}
