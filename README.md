@@ -1,11 +1,14 @@
 # Golang learning practices   
-_This is just for the beginner and someone who wanna review basic grammar in golang🤣. To get more parctices,you can go to the official trainning ground [**the tour of go**](https://www.runoob.com)_
+_This is just for the beginner and someone who wanna review basic grammar in golang🤣. To get more parctices,you can go to the official trainning ground [**the tour of go**](https://tour.golang.org/welcome/1)_
 
 
 
 ## environment   
 use __go 1.3__ and **go mod**,so it has the go.mod file in project. To run this example, you can execute  
-```go build```
+```
+go build
+```    
+
 
 -----
 
