@@ -17,6 +17,7 @@ type Movie struct {
 }
 
 func main() {
+	//slice
 	fmt.Println("stringUtil.Revers: ", stringutil.Reverse("!oG ,olleH"))
 	fmt.Println("config test: This is name ", config.GetName())
 
@@ -29,6 +30,7 @@ func main() {
 	fmt.Println("remove element ", learntest.RemoveElement(slice, 2))
 	fmt.Println(slice)
 
+	//map
 	ages := make(map[string]int)
 	ages["alice"] = 32
 	ages["charlie"] = 45
@@ -40,6 +42,7 @@ func main() {
 	}
 	fmt.Println("is ages and ages2 are same ", learntest.MapEqual(ages, ages2))
 
+	//JSON
 	var movies = []Movie{
 		{Title: "Casablanca", Year: 1942, Color: false,
 			Actors: []string{"Humphrey Bogart", "Ingrid Bergman"}},
@@ -65,5 +68,16 @@ func main() {
 		log.Fatalf("JSON unmarshaling failed: %s", err)
 	}
 	fmt.Println(titles)
+
+	//goroutine
+	learntest.Test1(45)
+
+	//learntest.Test2()
+
+	//interface
+	c := learntest.Celsius{Name: "Jack", Age: "15"}
+	var c2 learntest.Ce = 1
+	fmt.Println(c.String())
+	fmt.Printf("%s", c2)
 
 }
