@@ -55,7 +55,7 @@ func BenchmarkStringJoin(b *testing.B) {
 * go test -bench="." 执行Benchmark测试方法
 * 执行结果如下图所示，同时表明了strings.Join方法相比拼接字符串效率更高
 
-![image-20200125171137122](C:\Users\shuim\AppData\Roaming\Typora\typora-user-images\image-20200125171137122.png)
+![image-20200125171137122](https://s2.ax1x.com/2020/01/25/1eNnjx.png)
 
 
 
