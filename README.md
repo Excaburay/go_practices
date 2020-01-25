@@ -61,7 +61,7 @@ func BenchmarkStringJoin(b *testing.B) {
 
 ### go 网络编程
 
-go network 文件夹中实现了基础的客户端与服务端示例
+go network 文件夹中实现了基础的客户端与服务端示例，文件夹中有说明文档。
 
 * http1——http3 使用了net/http中的方法构造http网络连接
 * listener 使用了net中基础方法构造了socket网络连接
